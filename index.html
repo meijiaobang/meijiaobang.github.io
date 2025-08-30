@@ -4,50 +4,101 @@
   <meta charset="UTF-8">
   <title>美脚帮</title>
   <style>
+    /* 全局样式 */
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #fff;
     }
-    h1, p {
+
+    /* 标题 */
+    h1 {
       text-align: center;
-      font-size: 36px;
+      font-size: clamp(32px, 4vw, 60px); /* 响应式字体 */
+      margin: 20px 0;
     }
+
+    /* 常规段落 */
+    p {
+      text-align: center;
+      font-size: clamp(20px, 2.5vw, 36px);
+      margin: 15px 0;
+    }
+
+    /* X行组合 */
     .x-line {
       display: flex;
       justify-content: center;
       align-items: baseline;
       gap: 15px;
+      flex-wrap: wrap; /* 移动端换行 */
+      margin: 15px 0;
     }
+
     .big-x {
-      font-size: 72px;
+      font-size: clamp(48px, 6vw, 72px); /* 超大号 */
       font-weight: bold;
       color: red;
     }
+
     .desc {
-      font-size: 28px;
+      font-size: clamp(18px, 2vw, 28px);
     }
+
     .highlight-link {
       color: blue;
       text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* 地址行中的X */
+    .address {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 15px 0;
+    }
+
+    .address .big-x {
+      font-size: clamp(48px, 6vw, 72px);
+    }
+
+    /* 链接按钮 */
+    a {
+      font-size: clamp(24px, 3vw, 30px);
+      margin: 10px 0;
+      text-decoration: none;
+      color: #000;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
   <h1>美脚帮网站发布</h1>
-  <p>地址：meijiaobangX.com</p>
-  
+
+  <!-- 地址行 -->
+  <div class="address">
+    <span>地址：</span>
+    <span class="big-x">X</span>
+    <span>.com</span>
+  </div>
+
+  <!-- 说明 X 行 -->
   <div class="x-line">
     <span class="big-x">X</span>
     <span class="desc">代表系数如现用网址 <span class="highlight-link">meijiaobang6.com</span></span>
   </div>
-  
+
   <p>备用地址系数加1:如 meijiaobang4或5或6.com！脱衣舞</p>
-  <a style="font-size:30px" href="https://meijiaobang6.com">美脚帮</a>
+  <a href="https://meijiaobang6.com">美脚帮</a>
   <p>全裸 出镜</p>
   <p>摄影 私拍</p>
   <p>热舞</p>
