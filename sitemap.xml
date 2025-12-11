@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- 网站首页 -->
+    <url>
+        <loc>https://meijiaobang.github.io/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Google 验证文件（可选是否加入） -->
+    <url>
+        <loc>https://meijiaobang.github.io/google8f3b65862ce18e0d.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+</urlset>
