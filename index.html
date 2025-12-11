@@ -1,112 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>美脚帮</title>
+  <title>美脚帮 - 官方发布页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO 信息 -->
+  <meta name="description" content="美脚帮最新地址发布页，用于提供最新访问入口、地址说明与品牌信息。此页面为 GitHub Pages 官方发布导航，确保用户始终找到可访问的最新站点。">
+  <meta name="keywords" content="美脚帮, 美脚帮发布页, 美脚帮入口, 美脚帮最新地址">
+
   <style>
-    /* 全局样式 */
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       min-height: 100vh;
       margin: 0;
-      padding: 10px;
+      padding: 20px;
       box-sizing: border-box;
       background: #fff;
-      width: 100%;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
     }
 
-    /* 标题 */
     h1 {
+      font-size: clamp(32px, 5vw, 60px);
+      margin-bottom: 20px;
       text-align: center;
-      font-size: clamp(36px, 5vw, 80px); /* 响应式字体 */
-      margin: 20px 0;
-      width: 100%;
     }
 
-    /* 常规段落 */
     p {
+      font-size: clamp(16px, 2.2vw, 22px);
       text-align: center;
-      font-size: clamp(18px, 2.5vw, 36px);
-      margin: 15px 0;
-      width: 100%;
+      margin: 14px 0;
     }
 
-    /* 地址行 */
-    .address {
+    .address, .x-line {
       display: flex;
       justify-content: center;
       align-items: baseline;
       gap: 10px;
       flex-wrap: wrap;
+      font-size: clamp(18px, 2.5vw, 26px);
       margin: 15px 0;
-      width: 100%;
     }
-    .address .big-x {
-      font-size: clamp(48px, 8vw, 72px);
+
+    .big-x {
+      font-size: clamp(42px, 7vw, 70px);
       font-weight: bold;
       color: red;
     }
 
-    /* X 行组合 */
-    .x-line {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin: 15px 0;
-      width: 100%;
-    }
-    .x-line .big-x {
-      font-size: clamp(48px, 8vw, 72px);
-      font-weight: bold;
-      color: red;
-    }
-    .desc {
-      font-size: clamp(18px, 2.5vw, 28px);
-      color: #000;
-      text-decoration: none; /* 去掉下划线 */
-    }
-    .highlight-link {
-      color: blue; /* 可保留蓝色文字，但去掉下划线 */
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* 美脚帮链接 */
     .main-link {
-      font-size: clamp(24px, 4vw, 32px);
-      margin: 10px 0;
-      text-decoration: underline yellow; /* 黄下划线 */
-      color: green;
+      font-size: clamp(22px, 3vw, 28px);
       font-weight: bold;
+      color: green;
+      text-decoration: underline yellow;
+      margin-top: 20px;
+    }
+
+    .keyword-img {
+      height: 38px;
+      vertical-align: middle;
+      margin: 0 6px;
     }
   </style>
 </head>
-<body>
-  <h1>美脚帮网站发布</h1>
 
-  <!-- 地址行 -->
+<body>
+  <h1>美脚帮 · 官方发布页</h1>
+
   <div class="address">
-    <span>地址：meijiaobang</span>
+    <span>主访问地址：meijiaobang</span>
     <span class="big-x">X</span>
     <span>.com</span>
   </div>
 
-  <!-- 说明 X 行 -->
   <div class="x-line">
     <span class="big-x">X</span>
-    <span class="desc">代表系数如现用网址 <span class="highlight-link">meijiaobang6.com</span></span>
+    <span>代表数字，如：当前可用地址 <strong>meijiaobang6.com</strong></span>
   </div>
 
-  <p>备用地址系数加1:如 meijiaobang4或5或6.com！脱衣舞</p>
-  <a class="main-link" href="https://meijiaobang6.com">👉美脚帮</a>
-  <p>全裸 出镜</p>
-  <p>摄影 私拍</p>
-  <p>热舞</p>
+  <p>当主站域名更新时，X 的数字会递增。例如：meijiaobang4、meijiaobang5、meijiaobang6.com 均属于官方系列域名。</p>
+
+  <p>
+    以下内容是站点的主要内容展示类别（使用图片替代文字）：
+  </p>
+
+  <p>
+    <img src="images/tuoyiwu.png" alt="舞蹈类型" class="keyword-img">
+    <img src="images/quanluo.png" alt="视觉艺术" class="keyword-img">
+    <img src="images/sipai.png" alt="摄影内容" class="keyword-img">
+  </p>
+
+  <a class="main-link" href="https://meijiaobang6.com">进入美脚帮主站</a>
+
+  <p style="margin-top: 35px; font-size: 18px; max-width: 800px;">
+    本页面作为发布与导航页面，用于保证用户在不同网络环境下仍然可以找到美脚帮的可访问入口。由于部分运营商或地区可能导致主站域名不稳定，因此采用数字系数 X 作为备用域名切换方式，从而确保长期访问的可靠性。请收藏本页面以获取最新可用地址。
+  </p>
 </body>
 </html>
